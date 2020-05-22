@@ -17,4 +17,7 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshot
-
+!["Screenshot of main page desktop version"](/docs/desktop-ver.png)
+!["Screenshot of main page tablet version"](/docs/tablet-ver.png)
+!["Screenshot of tweet compose box"](/docs/new-tweet.png)
+!["Screenshot of new tweet posted"](/docs/new-tweet-displayed.png)
