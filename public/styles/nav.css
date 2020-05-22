@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background-color: #4056A1;
+  color: #ffffff;
+  padding:  1.5em;
+  position: sticky;
+  top: 0;
+}
+
+nav > span:nth-child(1) {
+  font-family: 'Bungee', cursive;
+  font-size: 40px;
+}
+
+.nav-redirect {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.fas.fa-angle-double-down{
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+

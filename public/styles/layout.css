@@ -17,9 +17,166 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ main {
+    margin: 0 auto;
+    width: 90%;
+ }
+
+ .tweet-posted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #545149;
+    margin: 40px auto;
+    padding: 30px;
+ }
+
+ .tweet-posted:hover {
+  box-shadow: 10px 10px 5px #C5CBE3;
+ }
+
+ .header-unique {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+ }
+ #username {
+   display: none;
+ }
+
+ #username h2 {
+  color: #C5CBE3;
+ }
+
+ .tweet-posted:hover #username {
+  display: block;
+  color: #C5CBE3;
+ }
+
+ #profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 2;
+    margin-bottom: 20px;
+ }
+
+ #profile > h2 {
+   color: #545149;
+   font-size: 2rem;
+ }
+
+
+ .tweet-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #545149;
+    width: 98%;
+    flex-basis: 2;
+ }
+
+ .tweet-content > article{
+  display: flex;
+  justify-content: flex-start;
+  width: 98%;
+  padding: 10px;
+  font-size: 2rem;
+ }
+
+ #resize{
+  width: 100px;
+  height: auto;
+ }
+
+ footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  width: 93%;
+  flex-basis: 1;
+  padding-top: 10px;
+ }
+
+ #tweet-links {
+   color: #4055A1;
+ }
+
+ /*erro message*/
+ .error-message {
+   font-size: 3.5rem;
+   display: flex;
+   height: 100px;
+   text-align: center;
+   align-items: center;
+   border: 5px solid #FF1200;
+   color:  #FF1200;
+   display:none;
+   margin-top: 50px;
+   padding-top: 12px;
+ }
+
+ .fas.fa-exclamation-triangle {
+   color: #FF1200;
+ }
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
+	60% {
+    -webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
+}
+
+.double-down {  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.double-down {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.redirect-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 100%;
+  background-color: rgb(219, 15, 42);
+  outline: none;
+  display: none;
+  width: 80px;
+  height: 80px;
+}
+
+.fas.fa-angle-double-up {
+  color: white;
+}

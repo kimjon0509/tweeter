@@ -1,0 +1,17 @@
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  background-color: #D89820;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+
+header h2{
+  color: #ffff;
+  font-weight: normal;
+  text-align: center;
+}
